@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geschützte Seite</title>
+    <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        if(sessionStorage.getItem('authenticated') !== 'true') {
+            window.location.href = 'beta-area-new-function.html';
+        }
+    });
+    </script>
+</head>
+<body>
+    <h1 style="text-align: center;">Willkommen im Beta Bereich...</h1>
+</body>
+</html>
